@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900i');
+body{
+ font-family: 'Roboto', sans-serif;
+ color: #676767;
+}
+.slider { height: 100vh; width: 100%; }
+.carousel-item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: transform 0.5s ease; 
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); 
+}
+.cuerpo{ 
+    position: relative;
+    left: 50%;
+    width: 96%; 
+    height: auto; 
+    padding: 30px; 
+    margin: 10px; 
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    transform: translateX(-50%);
+}
+p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+h3 {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.contenedores {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border-left: 3px solid red;
+    box-shadow: 3px 3px 5px rgba(163, 163, 163, 0.3);
+    border-radius: 10px;
+}
+
+.cuerpoDos {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/IMG_4755.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cuerpoTres {
+    position: relative;
+    left: 50%;
+    width: 96%; 
+    height: auto; 
+    padding: 30px; 
+    margin: 10px; 
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    transform: translateX(-50%);
+}
+
+.cuerpoTecnico { display: flex; }
+
+.items { flex: 1; margin: 20px; }
+
+.items img { width: 100%; height: auto; box-shadow: 3px 3px 5px rgba(163, 163, 163, 0.3); transition: transform 0.5s ease; cursor: pointer; }
+
+.items img:hover { transform: scale(1.1); }
+
+.negro {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 9999; 
+    color: white; 
+}
+
+.logo { position: absolute; top: 10px; left: 10px; }
+.logo img { cursor: pointer; }
+
+.cuerpoCuatro {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    padding: 50px;
+}
+.contactos {display: flex;}
+.contact {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.contact label {
+    font-size: 20px;
+    font-weight: bold; 
+}
+.contact a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.contact i {
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+.contact i:hover {
+    transform: scale(1.5);
+}
+
+/* Estilos para el menú principal */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fdfbfb7e; 
+    padding-top: 50px; 
+    padding-bottom: 0; 
+    padding-left: 0; 
+    padding-right: 0;
+    z-index: 1000; 
+    backdrop-filter: blur(3px);
+}
+
+.menu ul {
+    margin-top: -20px;
+    padding: 0;
+    list-style: none;
+    text-align: center; 
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px; 
+    position: relative; 
+    font-size: 20px;
+}
+
+.menu ul li a {
+    color: rgb(251, 1, 1); 
+    text-decoration: none; 
+    position: relative; 
+}
+
+.menu ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%; 
+    bottom: 0;
+    width: 0; 
+    height: 3px; 
+    background-color: red; 
+    transition: width 0.3s ease; 
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+    left: 0; 
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #3333337e;
+    z-index: 1001;
+    padding: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.fa-bars {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedor-menu-móvil {
+    position: fixed;
+    top: 50px;
+    right: -50%; /* Inicialmente fuera de la pantalla */
+    width: 50%;
+    height: 100vh;
+    background-color: #a5a3a37e;
+    z-index: 1000;
+    padding: 10px;
+    backdrop-filter: blur(3px);
+    transition: right 0.3s ease; /* Transición suave para el desplazamiento */
+}
+
+.menu-visible {
+    right: 0; /* Para mostrar el menú móvil */
+}
+
+#comentario {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 70%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 999;
+    transform: translateX(-50%);
+    border-left: 5px solid #032274;
+    border-right: 5px solid #032274;
+    color: white;
+}
+
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Para que los divs se envuelvan cuando no haya suficiente espacio */
+}
+
+.menus {
+    flex: 1; /* Ocupa todo el ancho disponible */
+}
+
+.menus ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menus ul li {
+    display: block; 
+    margin-bottom: 5px; 
+    /* border: 1px solid red; */
+    padding: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(51, 51, 51, 0.8), rgba(255, 255, 255, 0.1)); /* Degradado de blanco a transparente a negro */
+}
+.menus ul li:hover {
+    background: #333;
+}
+.menus ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenidos {
+    flex: 1; /* Dividir el espacio restante entre los tres divs */
+    padding: 10px;
+    background-color: #444;
+    margin-right: 10px; /* Espacio entre los divs */
+}
+
+.contenidos:last-child {
+    margin-right: 0;
+}
+
+/*fin footer*/
+
+@media screen and (max-width: 768px) {
+    /* Oculta el menú principal en dispositivos con un ancho máximo de 768px */
+    .menu {
+        display: none;
+    }
+
+    /* Muestra el menú móvil en dispositivos con un ancho máximo de 768px */
+    .mobile-menu {
+        display: block;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #032274; /* Color del indicador de desplazamiento */
+}
+
