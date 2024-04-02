@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
 <body>
 <div class="mobile-menu">
     <div class="logo animate__bounceInDown" >
-       ESCUELA LA ROJITA | <img src="img/301190554_367197338902784_6235497689099637172_n.png" width="30" alt="Escuela la Rojita" title="Escuela la Rojita">
+        <img src="img/301190554_367197338902784_6235497689099637172_n.png" width="30" alt="Escuela la Rojita" title="Escuela la Rojita">
     </div>
     <i id="menu-icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
 </div>
@@ -32,13 +32,18 @@
     Contenido del menú móvil
 </div>
 <nav class="menu">
-    <div class="logo animate__bounceInDown">
-        <img src="img/301190554_367197338902784_6235497689099637172_n.png" width="60" alt="Escuela la Rojita" title="Escuela la Rojita">
+    <div class="logos-container">
+        <div class="logo animate__bounceInDown">
+            <img id="rotating-img1" src="img/301190554_367197338902784_6235497689099637172_n.png" width="60px" alt="Escuela la Rojita" title="Escuela la Rojita">
+        </div>
+        <div class="logoDos">
+            <img id="rotating-img2" src="img/logoFemenino.png" width="60px" alt="Escuela la Rojita" title="Escuela la Rojita">
+        </div>
     </div>
     <ul class="animate__backInLeft">
         <li><a href="#">INICIO</a></li>
         <li><a href="#" title="Revisa Nuestras Noticias">NOTICIAS</a></li>
-        <li><a href="#" title="Visita Nuestra Galeria">GALERIAS</a></li>
+        <li><a href="galeria/" title="Visita Nuestra Galeria">GALERIAS</a></li>
         <li><a href="#" title="Revisa Nuestra Histroria">HISTORIA</a></li>
         <li><a href="#" title="Nuestro Plantel">PLANTEL</a></li>
         <li><a href="https://web.whatsapp.com/send?phone=56997916354" target="_blank" title="Contactanos por WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
@@ -70,7 +75,7 @@
         </button>
     </div>
     <div id="comentario">
-
+        <label for="">"Enseñamos el fútbol más allá del fútbol"</label>
     </div>
 </section>
 <section class="cuerpo" class="animate__backInRight">

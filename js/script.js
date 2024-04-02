@@ -20,4 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
             divNegro.style.display = 'block';
         });
     });
+
+    // Alternar la visibilidad de los logos
+    let logos = document.querySelectorAll('.logo, .logoDos');
+    let index = 0;
+
+    setInterval(() => {
+        logos[index].classList.remove('show');
+        index = (index + 1) % logos.length;
+        logos[index].classList.add('show');
+    }, 5000); // Cambiar cada 5 segundos (según el retraso establecido en CSS)
+
 });

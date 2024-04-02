@@ -92,9 +92,10 @@ h3 {
     color: white; 
 }
 
-.logo { position: absolute; top: 10px; left: 10px; }
+/* .logo { position: absolute; top: 10px; left: 10px; } */
 .logo img { cursor: pointer; }
-
+/* .logoDos { position: absolute; top: 10px; right: 10px;} */
+.logoDos img { cursor: pointer;} 
 .cuerpoCuatro {
     position: relative;
     width: 100%;
@@ -233,6 +234,10 @@ h3 {
     border-left: 5px solid #032274;
     border-right: 5px solid #032274;
     color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 
@@ -296,14 +301,57 @@ footer {
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento */
+    width: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+    background: #f1f1f1; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #032274; /* Color del indicador de desplazamiento */
+    background: #032274; 
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logos-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px; /* Ancho de los logos */
+    height: 60px; /* Alto de los logos */
+    z-index: 999;
+}
+
+.logo, .logoDos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Inicialmente ocultos */
+    visibility: hidden; /* Inicialmente ocultos */
+}
+
+#rotating-img1, #rotating-img2 {
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+}
+
+.logo:first-child {
+    animation-delay: 0s; /* Retraso para el primer logo */
+}
+
+.logoDos:first-child {
+    animation-delay: 20s; /* Retraso para el segundo logo */
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
