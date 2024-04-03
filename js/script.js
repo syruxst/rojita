@@ -79,5 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
         logos[index].classList.add('show');
     }, 5000);
 
+    AOS.init();
 
 });

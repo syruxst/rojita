@@ -1,4 +1,4 @@
-<?php require('node_modules/data.php') ?>
+<?php require('text/data.php') ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -79,7 +83,7 @@
         <label for="">"Enseñamos el fútbol más allá del fútbol"</label>
     </div>
 </section>
-<section class="cuerpo" class="animate__backInRight">
+<section class="cuerpo" class="animate__backInRight" data-aos="fade-up" data-aos-duration="3000">
     <div class="contenedores">
         <div class="item">
             <img src="img/jaime.png" alt="Profesor Jaime Valero" width="200" title="Jaime Valero">
@@ -103,7 +107,7 @@
 </section>
 <section class="cuerpoTres">
     <h3>Cuerpo Técnico</h3>
-    <div class="cuerpoTecnico">
+    <div class="cuerpoTecnico" data-aos="fade-up" data-aos-duration="3000">
 
         <?php
             $ct = "SELECT * FROM `ctecnico`";
@@ -147,7 +151,7 @@
             <ul>
                 <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
                 <li><a href="#" title="Revisa Nuestras Noticias"><i class="fa fa-commenting-o" aria-hidden="true"></i> NOTICIAS</a></li>
-                <li><a href="#" title="Visita Nuestra Galeria"><i class="fa fa-picture-o" aria-hidden="true"></i> GALERIAS</a></li>
+                <li><a href="galeria/" title="Visita Nuestra Galeria"><i class="fa fa-picture-o" aria-hidden="true"></i> GALERIAS</a></li>
                 <li><a href="#" title="Revisa Nuestra Histroria"><i class="fa fa-history" aria-hidden="true"></i> HISTORIA</a></li>
                 <li><a href="#" title="Nuestro Plantel"><i class="fa fa-users" aria-hidden="true"></i> PLANTEL</a></li>
                 <li><a href="https://web.whatsapp.com/send?phone=56997916354" target="_blank" title="Contactanos por WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
@@ -187,6 +191,9 @@
                 <td><p id="parrafo"></p></td>
             </tr>
         </table>
+        <div class="logotipos">
+            <img src="img/logos.png" id="duplex" alt="Escuela la Rojita">
+        </div>
     </div>
 </div>
 <script src="js/script.js"></script>

@@ -17,15 +17,9 @@ body{
     transform: scale(1.05); 
 }
 .cuerpo{ 
+    width: 100%;
     position: relative;
-    left: 50%;
-    width: 96%; 
-    height: auto; 
-    padding: 30px; 
-    margin: 10px; 
-    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5); 
-    border-radius: 10px; 
-    transform: translateX(-50%);
+    height: auto;
 }
 p {
     text-align: justify;
@@ -40,6 +34,15 @@ h3 {
 
 .contenedores {
     display: flex;
+    position: relative;
+    left: 50%;
+    width: 96%; 
+    height: auto; 
+    padding: 30px; 
+    margin: 10px; 
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    transform: translateX(-50%);
 }
 
 .item {
@@ -131,7 +134,13 @@ h3 {
 #parrafo {
     text-align: justify;
 }
-
+.descriptions #duplex {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 150px;
+    right: 150px;
+}
 /* .logo { position: absolute; top: 10px; left: 10px; } */
 .logo img { cursor: pointer; }
 /* .logoDos { position: absolute; top: 10px; right: 10px;} */
@@ -339,6 +348,12 @@ footer {
     /* Muestra el menú móvil en dispositivos con un ancho máximo de 768px */
     .mobile-menu {
         display: block;
+    }
+    .cuerpo {
+        display: none;
+    }
+    .comentario {
+        display: none;
     }
 }
 
