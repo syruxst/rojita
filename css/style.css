@@ -53,7 +53,7 @@ h3 {
 
 .cuerpoDos {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-image: url('../img/IMG_4755.jpg');
     background-size: cover;
     background-position: center;
@@ -90,6 +90,46 @@ h3 {
     background-color: rgba(0, 0, 0, 0.8); 
     z-index: 9999; 
     color: white; 
+    padding: 100px;
+}
+
+#tabla_cuerpo_tecnico {
+    width: 100%;
+    border-collapse: collapse; 
+    padding: 10px; 
+}
+
+#tabla_cuerpo_tecnico td {
+    padding: 10px; 
+}
+
+#tabla_cuerpo_tecnico h2, #tabla_cuerpo_tecnico label {
+    text-align: center; 
+}
+
+.descriptions {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 1); 
+    border: 5px solid red;
+    padding: 50px;
+    color: #032274;
+}
+.descriptions h2 {
+    color: #032274;
+}
+#imagen {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+#imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#parrafo {
+    text-align: justify;
 }
 
 /* .logo { position: absolute; top: 10px; left: 10px; } */
@@ -238,7 +278,9 @@ h3 {
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    cursor: pointer;
 }
+
 
 
 /*footer*/

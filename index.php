@@ -1,3 +1,4 @@
+<?php require('node_modules/data.php') ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -103,18 +104,16 @@
 <section class="cuerpoTres">
     <h3>Cuerpo Técnico</h3>
     <div class="cuerpoTecnico">
-        <div class="items">
-            <img src="img/cuerpoTecnico/40.png" id="40" alt="Nicolas Aguilera" title="Preparador de Arqueros" width="200">
-        </div>
-        <div class="items">
-            <img src="img/cuerpoTecnico/41.png" id="41" alt="Jose Miranda" title="Director Tecnico" width="200">
-        </div>
-        <div class="items">
-            <img src="img/cuerpoTecnico/42.png" id="42" alt="Chris Valero" title="Jefe Deportivo" width="200">
-        </div>
-        <div class="items">
-            <img src="img/cuerpoTecnico/43.png" id="43" alt="Jaime Valero" title="Director" width="200">
-        </div>
+
+        <?php
+            $ct = "SELECT * FROM `ctecnico`";
+            $rst = mysqli_query($conn, $ct);
+            while($row = mysqli_fetch_assoc($rst)){
+                echo '<div class="items">';
+                echo '<img src="'.$row['ruta'].'" id="'.$row['codigo'].'" alt="'.$row['name'].'" title="'.$row['titulo'].'" width="200" data-description="'.$row['comentario'].'">';
+                echo '</div>';
+            }
+        ?>
     </div>
 </section>
 <section class="cuerpoCuatro">
@@ -169,6 +168,26 @@
     <center>Copyright © 2024 Daniel Ugalde</center> -->
 </footer>
 <div class="negro" id="negro">
+    <div class="descriptions">
+        <table width="100%" border="0" id="tabla_cuerpo_tecnico">
+            <tr>
+                <td rowspan="3">
+                    <div id="imagen">
+                        <img id="imagen-aqui" src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen">
+                    </div>
+                </td>
+                <td>
+                    <h2 id="nombre-tecnico"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" id="cargos"></label></td>
+            </tr>
+            <tr>
+                <td><p id="parrafo"></p></td>
+            </tr>
+        </table>
+    </div>
 </div>
 <script src="js/script.js"></script>
 </body>
