@@ -145,6 +145,9 @@ body {
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
     transition: transform 0.5s ease;
 }
+.item .contenedorImagen img:hover {
+    transform: scale(1.3);
+}
 
 .overlay {
     position: absolute;

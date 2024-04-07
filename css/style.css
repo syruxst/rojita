@@ -340,12 +340,10 @@ footer {
 /*fin footer*/
 
 @media screen and (max-width: 768px) {
-    /* Oculta el menú principal en dispositivos con un ancho máximo de 768px */
     .menu {
         display: none;
     }
 
-    /* Muestra el menú móvil en dispositivos con un ancho máximo de 768px */
     .mobile-menu {
         display: block;
     }
@@ -353,6 +351,9 @@ footer {
         display: none;
     }
     .comentario {
+        display: none;
+    }
+    footer {
         display: none;
     }
 }
