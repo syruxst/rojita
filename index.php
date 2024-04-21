@@ -27,6 +27,12 @@
     <title>:: Escuela de Futbol La Rojita ::</title>
 </head>
 <body>
+<a href="https://wa.me/56997916354" target="_blank" id="whatsapp-float" style="display:none;" title="Comunicate con nosotros">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"/>
+</a>
+<a href="https://www.instagram.com/escuelalarojita/" target="_blank" id="instagram-float" style="display:none;" title="Visita nuestra red social">
+    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"/>
+</a>
 <div class="mobile-menu">
     <div class="logo animate__bounceInDown" >
         <img src="img/301190554_367197338902784_6235497689099637172_n.png" width="30" alt="Escuela la Rojita" title="Escuela la Rojita">
@@ -81,6 +87,9 @@
     </div>
     <div id="comentario">
         <label for="">"Enseñamos el fútbol más allá del fútbol"</label>
+
+        <button type="button" id="femenina" class="buttonCommit" style="border-left: 5px solid pink; border-right: 5px solid pink;" title="Impulsamos a nuestras niñas a ser grandes deportistas"><img src="img/logoFemenino.png" width="50"> RAMA FEMENINA</button>
+        <button type="button" id="masculina" class="buttonCommit" style="border-left: 5px solid red; border-right: 5px solid red;" title="Impulsamos a nuestras niños a ser grandes deportistas"><img src="img/301190554_367197338902784_6235497689099637172_n.png" width="50"> RAMA MASCULINA</button>
     </div>
 </section>
 <section class="cuerpo" class="animate__backInRight" data-aos="fade-up" data-aos-duration="3000">
@@ -196,6 +205,22 @@
         </div>
     </div>
 </div>
+<div id="ramaFemenina">
+    <div id="contenidoF">
+        <div id="superiorF">
+       
+        </div>
+        <div class="cuerpos">
+
+        </div>
+    </div>
+</div>
+
+<div id="ramaMasculina">
+
+</div>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

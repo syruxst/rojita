@@ -52,15 +52,30 @@ document.addEventListener('DOMContentLoaded', function () {
         event.stopPropagation();
     });
 
-    // Alternar la visibilidad de los logos
-    // let logos = document.querySelectorAll('.logo, .logoDos');
-    // let index = 0;
+    let f = document.getElementById('femenina');
+    let divFemenina = document.getElementById('ramaFemenina');
+    let m = document.getElementById('masculina');
+    let divMasculina = document.getElementById('ramaMasculina');
 
-    // setInterval(() => {
-    //     logos[index].classList.remove('show');
-    //     index = (index + 1) % logos.length;
-    //     logos[index].classList.add('show');
-    // }, 5000); 
+    f.addEventListener('click', function(){
+        divFemenina.style.display = 'block';
+    });
+
+    divFemenina.addEventListener('click', function(e){
+        if(e.target.id === 'ramaFemenina'){
+            divFemenina.style.display = 'none';
+        }
+    });
+
+    m.addEventListener('click', function(){
+        divMasculina.style.display = 'block';
+    });
+
+    divMasculina.addEventListener('click', function(i){
+        if(i.target.id === 'ramaMasculina'){
+            divMasculina.style.display = 'none';
+        }
+    });
 
     let logos = document.querySelectorAll('.logo, .logoDos');
     let index = 0;
@@ -82,3 +97,19 @@ document.addEventListener('DOMContentLoaded', function () {
     AOS.init();
 
 });
+
+window.onscroll = function() {
+    var whatsappButton = document.getElementById("whatsapp-float");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        whatsappButton.style.display = "block";
+    } else {
+        whatsappButton.style.display = "none";
+    }
+
+    var instagramButton = document.getElementById("instagram-float");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        instagramButton.style.display = "block";
+    } else {
+        instagramButton.style.display = "none";
+    }
+};
