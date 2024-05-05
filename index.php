@@ -116,7 +116,7 @@
     </div>
 </section>
 <section class="cuerpoDos">
-
+hola
 </section>
 <section class="cuerpoTres">
     <h3>Cuerpo Técnico</h3>
@@ -238,9 +238,34 @@ PERMITIR Y CO-CREAR ESPACIOS EXCLUSIVAMENTE PARA LAS MUJERES ES NECESARIO PARA E
     <hr>
 </div>
 <div id="mobile-tres">
-    
+    <center><h1>¿Quienes Somos?</h1></center>
+    <div id="mobile-contend-tres" class="animate__backInRight" data-aos="fade-up" data-aos-duration="3000">
+        <p>Una escuela de fútbol formativa, con 7 años de vida, ubicada en los andes, valle de Aconcagua. Un lugar donde el respeto, el juego, el amor por lo que se hace y la colaboración son pilares en el traspaso de conocimiento futbolístico. Proyecto sostenido por todas y cada una de sus partes y actores, que intenta construir una nueva cultura futbolística promotora del bienestar y la educación.</p>
+        <img src="img/IMG_20230812_122441.jpg" width="100%" alt="">
+    </div>
 </div>
-
+<div id="mobile-cuatro">
+    <center><h1>¿Dónde nos encuentras?</h1></center>
+    <div id="mobile-contend-cuatro" class="animate__backInRight" data-aos="fade-up" data-aos-duration="3000">
+        <p>Una escuela de fútbol formativa, con 7 años de vida, ubicada en los andes, valle de Aconcagua. Un lugar donde el respeto, el juego, el amor por lo que se hace y la colaboración son pilares en el traspaso de conocimiento futbolístico. Proyecto sostenido por todas y cada una de sus partes y actores, que intenta construir una nueva cultura futbolística promotora del bienestar y la educación.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1714875232557!6m8!1m7!1seYP84rXcsvnSTmsxoZMggA!2m2!1d-32.86029159917574!2d-70.58880531963122!3f182.69023645594532!4f-2.9858611068659826!5f1.1924812503605782" width="100%" height="180px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+</div>
+<div id="mobile-quinto">
+    <center><h1>Cuerpo Técnico</h1></center>
+    <div id="mobile-contend-quinto" class="animate__backInRight" data-aos="fade-up" data-aos-duration="3000">
+        <?php
+            $Ct = "SELECT * FROM `ctecnico`";
+            $Rst = mysqli_query($conn, $Ct);
+            echo '<div class="carousel-container">'; // Contenedor para el carrusel
+            while ($Row = mysqli_fetch_assoc($Rst)) {
+                echo '<div class="items-ct">';
+                echo '<img src="'.$Row['ruta'].'" id="'.$Row['codigo'].'" alt="'.$Row['name'].'" title="'.$Row['titulo'].'" width="100%" data-description="'.$Row['comentario'].'">';
+                echo '</div>';
+            }
+            echo '</div>'; // Cierre del contenedor del carrusel
+        ?>
+    </div>
+</div>
 <!-- fin movil -->
 <script src="js/script.js"></script>
 

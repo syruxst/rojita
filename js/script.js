@@ -95,20 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000);
 
     AOS.init();
-
-    // if (window.innerWidth <= 768) {
-    //     const items = document.querySelectorAll('.items img');
-
-    //     items.forEach(item => {
-    //         item.addEventListener('touchstart', function() {
-    //             this.parentNode.style.animationPlayState = 'paused';
-    //         });
-
-    //         item.addEventListener('touchend', function() {
-    //             this.parentNode.style.animationPlayState = 'running';
-    //         });
-    //     });
-    // }
 });
 
 window.onscroll = function() {
