@@ -34,8 +34,13 @@
     <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"/>
 </a>
 <div class="mobile-menu">
-    <div class="logo animate__bounceInDown" >
-        <img src="img/301190554_367197338902784_6235497689099637172_n.png" width="30" alt="Escuela la Rojita" title="Escuela la Rojita">
+    <div class="logos-container">
+        <div class="logo animate__bounceInDown">
+            <img id="rotating-img1" src="img/301190554_367197338902784_6235497689099637172_n.png" width="60px" alt="Escuela la Rojita" title="Escuela la Rojita">
+        </div>
+        <div class="logoDos">
+            <img id="rotating-img2" src="img/logoFemenino.png" width="60px" alt="Escuela la Rojita" title="Escuela la Rojita">
+        </div>
     </div>
     <i id="menu-icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
 </div>
@@ -87,7 +92,6 @@
     </div>
     <div id="comentario">
         <label for="">"Enseñamos el fútbol más allá del fútbol"</label>
-
         <button type="button" id="femenina" class="buttonCommit" style="border-left: 5px solid pink; border-right: 5px solid pink;" title="Impulsamos a nuestras niñas a ser grandes deportistas"><img src="img/logoFemenino.png" width="50"> RAMA FEMENINA</button>
         <button type="button" id="masculina" class="buttonCommit" style="border-left: 5px solid red; border-right: 5px solid red;" title="Impulsamos a nuestras niños a ser grandes deportistas"><img src="img/301190554_367197338902784_6235497689099637172_n.png" width="50"> RAMA MASCULINA</button>
     </div>
@@ -208,10 +212,12 @@
 <div id="ramaFemenina">
     <div id="contenidoF">
         <div id="superiorF">
-       
+            <img src="img/logoFemenino.png" width="100">
         </div>
         <div class="cuerpos">
-
+        <p>La rama femenina de nuestra escuela de fútbol, nace a partir necesidades que desde hace tiempo la sociedad está expresando a raíz de la exclusión que históricamente ha vivido en el fútbol el género femenino. El fútbol es un juego que influye de manera importante social y culturalmente, por lo que establecer una rama femenina desde edades formativas puede ser una oportunidad más que interesante para “emparejar la cancha” y hacer que la equidad sea una característica que permea todos los espacios y contextos. <br><br>
+PERMITIR Y CO-CREAR ESPACIOS EXCLUSIVAMENTE PARA LAS MUJERES ES NECESARIO PARA EQUIPARAR LAS COSAS Y DESDE EDADES TEMPRANAS PERMITIR QUE LAS NUEVAS GENERACIONES CREZCAN EN LA IGUALDAD DE OPORTUNIDADES. 
+</p>
         </div>
     </div>
 </div>
@@ -220,6 +226,22 @@
 
 </div>
 
+<!--movil-->
+<div id="mobile-contend">
+    <label for="">
+        Escuala de Fútbol <br>
+        La Rojita
+    </label>
+</div>
+<div id="mobile-dos">
+    hola
+    <hr>
+</div>
+<div id="mobile-tres">
+    
+</div>
+
+<!-- fin movil -->
 <script src="js/script.js"></script>
 
 </body>

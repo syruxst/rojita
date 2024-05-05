@@ -3,6 +3,12 @@ body{
  font-family: 'Roboto', sans-serif;
  color: #676767;
 }
+#mobile-contend{
+    display: none;
+}
+#mobile-dos {
+    display: none;
+}
 .slider { height: 100vh; width: 100%; }
 .carousel-item img {
     top: 0;
@@ -239,8 +245,8 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
-    background-color: #3333337e;
+    height: 75px;
+    background-color: white;
     z-index: 1001;
     padding: 10px;
     backdrop-filter: blur(3px);
@@ -250,13 +256,13 @@ h3 {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: white;
+    color: rgb(254, 6, 6);
     cursor: pointer;
 }
 
 .contenedor-menu-móvil {
     position: fixed;
-    top: 50px;
+    top: 75px;
     right: -50%; /* Inicialmente fuera de la pantalla */
     width: 50%;
     height: 100vh;
@@ -276,7 +282,8 @@ h3 {
     top: 300px;
     left: 50%;
     width: 70%;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     z-index: 999;
@@ -287,18 +294,21 @@ h3 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     cursor: pointer;
+}
+#comentario label {
+    font-size: 3vw; 
 }
 
 .buttonCommit {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
-    border: none; /* Opcional: quitar el borde */
-    color: white; /* Color del texto */
-    font-size: 16px; /* Tamaño del texto */
-    padding: 10px 20px; /* Espacio alrededor del texto e imagen */
-    cursor: pointer; /* Cursor en forma de mano al pasar el ratón */
-    outline: none; /* Elimina el contorno que aparece al hacer clic */
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    outline: none; 
+    margin: 20px;
 }
 
 .buttonCommit:hover {
@@ -403,14 +413,41 @@ footer {
     .mobile-menu {
         display: block;
     }
-    .cuerpo {
+    .slider{
         display: none;
     }
     .comentario {
         display: none;
     }
+    .cuerpo {
+        display: none;
+    }
+    .cuerpoDos{
+        display: none;
+    }
+    .cuerpoTres{
+        display: none;
+    }
+    .cuerpoCuatro {
+        display: none;
+    }
     footer {
         display: none;
+    }
+    body {
+        background-image: url('../img/IMG_4755.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #mobile-contend{
+        display: block;
+    }
+    .cuerpos p {
+        font-size: 2vw;
+    }
+    #mobile-dos{
+        display: block;
     }
 }
 
@@ -439,8 +476,8 @@ footer {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 60px; /* Ancho de los logos */
-    height: 60px; /* Alto de los logos */
+    width: 60px; 
+    height: 60px; 
     z-index: 999;
 }
 
@@ -448,8 +485,8 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0; /* Inicialmente ocultos */
-    visibility: hidden; /* Inicialmente ocultos */
+    opacity: 0; 
+    visibility: hidden;
 }
 
 #rotating-img1, #rotating-img2 {
@@ -458,11 +495,11 @@ footer {
 }
 
 .logo:first-child {
-    animation-delay: 0s; /* Retraso para el primer logo */
+    animation-delay: 0s; 
 }
 
 .logoDos:first-child {
-    animation-delay: 20s; /* Retraso para el segundo logo */
+    animation-delay: 20s; 
 }
 
 .show {
@@ -502,6 +539,18 @@ footer {
     width: 100%;
     height: 300px;
 }
+.cuerpos{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    color: black;
+}
+.cuerpos p {
+    text-align: justify;
+    font-size: 18px;
+}
 /* Rama Masculina */
 #ramaMasculina{
     position: fixed;
@@ -514,4 +563,61 @@ footer {
     z-index: 9999; 
     color: white; 
     padding: 100px;
+}
+
+/* mobile */
+#mobile-contend {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    width: 100%;
+    height: 700px;
+    padding: 20px;
+    z-index: 999;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-image: url('../img/mobile/PARAPORTADA.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#mobile-contend::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    z-index: 2; 
+}
+
+#mobile-contend label {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    box-sizing: border-box;
+    font-size: 2em;
+    z-index: 3; 
+}
+#mobile-dos{
+    position: absolute;
+    top: 775px;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    padding: 50px;
+    color: white;
+}
+#mobile-tres{
+    position: absolute;
+    top: 975px;
+    height: 500px;
+    width: 100%;
+    background-color: white;
 }
